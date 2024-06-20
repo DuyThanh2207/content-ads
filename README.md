@@ -1,3 +1,5 @@
+# Node Version: 18.15.0 or higher
+
 # Content ADS
 
 This is a simple web application built with React.js for creating and displaying ads using a drag-and-drop interface.
