@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# Content ADS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple web application built with React.js for creating and displaying ads using a drag-and-drop interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Admin page to create ads with drag-and-drop interface.
+- Three components: Paragraph, Button and Image Upload.
+- Editable text for Paragraph, editable label and alert message for Button and editable image for Image Upload.
+- Consumer page to display the created ads.
+- Inline text editing for components.
+- Implement undo and redo functionality.
+- Export and import functionality for saving and loading the page layout.
 
-## Expanding the ESLint configuration
+## Setup and Run
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
 
-- Configure the top-level `parserOptions` property like this:
+   ```sh
+   git clone https://github.com/DuyThanh2207/content-ads.git
+   cd content-ads
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. Install dependencies:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```sh
+   pnpm install / yarn install
+   ```
+
+3. Run the development server:
+
+   ```sh
+   pnpm dev / yarn dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser to see the result.
+
+## File Structure
+
+- `components/`: Contains reusable React components.
+- `pages/`: Contains pages.
+- `contexts/`: Contains contexts.
+- `hooks/`: Contains custom hooks.
+- `routers/`: Contains router config.
+- `types/`: Contains types.
+- `utils/`: Contains utils.
+- `README.md`: Project documentation.
+
+## License
+
+MIT License.
